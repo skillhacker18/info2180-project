@@ -1,0 +1,126 @@
+body {
+    font-family: sans-serif;
+    background: -webkit-linear-gradient(to right, #155799, #159957);
+    background: linear-gradient(to right, #155799, #159957);
+    color: whitesmoke;
+    margin: 0; 
+    padding-top: 70px; 
+}
+
+header {
+    text-align: left; 
+    background-color: #011f4b; 
+    color: whitesmoke; 
+    padding: 10px; 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    border-bottom: 2px solid #159957; 
+    margin: 0; 
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+.header-img {
+    font-size: 1em; 
+    margin-right: 10px; 
+}
+
+form {
+    width: 35rem;
+    margin: 50px auto 20px auto; 
+    color: whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.head {
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.0em; 
+    text-align: center; 
+    margin: 20px 0;
+}
+
+.main {
+    padding: 16px;
+}
+
+button i {
+    margin-right: 8px; 
+}
+
+.subcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ccc; 
+}
+
+button {
+    background-color: #155799;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none; 
+}
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.subcontainer label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.subcontainer input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto;
+    height: auto;
+}
+
+/* Media queries for the responsiveness of the page */
+@media screen and (max-width: 600px) {
+    form {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form {
+        width: 20rem;
+    }
+}

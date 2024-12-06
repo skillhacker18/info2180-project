@@ -1,0 +1,141 @@
+body {
+    font-family: sans-serif;
+    background: -webkit-linear-gradient(to right, #155799, #159957);
+    background: linear-gradient(to right, #155799, #159957);
+    color: whitesmoke;
+    margin: 0; 
+    padding-top: 70px; 
+}
+
+header {
+    text-align: left; 
+    background-color: #011f4b; 
+    color: whitesmoke; 
+    padding: 10px; 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    border-bottom: 2px solid #159957; 
+    margin: 0; 
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+.header-img {
+    font-size: 1em; 
+    margin-right: 10px; 
+}
+
+h1 {
+    text-align: left; 
+    margin-top: 100px; 
+    padding-left: 20px; 
+}
+
+form {
+    width: 35rem;
+    margin: 20px auto; /* Adjusted margin to bring the form closer to the top */
+    color: whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 20px; 
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-fields, .email-password-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.field:last-child {
+    margin-right: 0;
+}
+
+.user label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.user input, .user select {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ccc; 
+}
+
+button {
+    background-color: #155799;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none; 
+}
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #155799;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for the responsiveness of the page */
+@media screen and (max-width: 600px) {
+    form {
+        width: 25rem;
+    }
+
+    .name-fields, .email-password-fields {
+        flex-direction: column;
+    }
+
+    .field {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .field:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form {
+        width: 20rem;
+    }
+}
