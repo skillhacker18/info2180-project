@@ -46,7 +46,7 @@ if ($isAjax) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolphin CRM - Dashboard</title>
-    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="css/Home.css">
 </head>
 <body>
     <div class="dashboard">
@@ -100,6 +100,6 @@ if ($isAjax) {
     </div>
 
     <?php $conn->close(); ?>
-    <script src="home.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

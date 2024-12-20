@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['ajax'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="newuser.css">
+    <link rel="stylesheet" href="css/newuser.css">
     <title>Dolphin CRM</title>
 </head>
 <body>
@@ -99,6 +99,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['ajax'])) {
         <div id="response-message"></div>
     </div>
 
-    <script src="newUser.js"></script>
+    <script src="js/newUser.js"></script>
 </body>
 </html>
