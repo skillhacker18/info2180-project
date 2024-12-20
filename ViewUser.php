@@ -52,7 +52,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolphin CRM</title>
-    <link rel="stylesheet" href="viewuser.css">
+    <link rel="stylesheet" href="css/viewuser.css">
 </head>
 <body>
     <div class="viewuser">
@@ -77,7 +77,7 @@ $conn->close();
         </div>
     </div>
 
-    <script src="viewUser.js"></script>
+    <script src="js/viewUser.js"></script>
 </body>
 </html>
 

@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest') {
                 ob_start();
-                include 'contactContent.php';  // Use the updated notes content in the response
+                include 'content/contactContent.php';  // Use the updated notes content in the response
                 $content = ob_get_clean();
                 echo $content;  
             }
@@ -141,7 +141,7 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contactDetails.css">
+    <link rel="stylesheet" href="css/contactDetails.css">
     <title>Contact Details - Dolphin CRM</title>
 </head>
 <body>
@@ -211,6 +211,6 @@ $conn->close();
         </form>
     </div>
 
-    <script src="contactDetails.js"></script>
+    <script src="js/contactDetails.js"></script>
 </body>
 </html>
