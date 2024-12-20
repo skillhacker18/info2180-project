@@ -1,0 +1,280 @@
+
+body {
+    font-family: sans-serif;
+    background: -webkit-linear-gradient(to right, #155799, #159957);
+    background: linear-gradient(to right, #155799, #159957);
+    color: whitesmoke;
+    margin: 0;
+    padding-top: 50px; 
+}
+
+.contact-details {
+    width: 90%; 
+    max-width: 1000px; 
+    margin: 20px auto;
+    padding: 30px; 
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: rgba(11, 15, 13, 0.8); 
+    color: whitesmoke;
+    box-sizing: border-box; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+
+h1 {
+    margin-top: 0; 
+    padding-left: 0;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+
+button {
+    background-color: #155799;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 150px; 
+}
+
+button:hover {
+    background-color: #159957;
+}
+
+/* Contact Info Box */
+.contact-info {
+    margin-top: 20px; 
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    margin-bottom: 20px; 
+}
+
+.contact-info i {
+    font-size: 2.5em; 
+    color: rgba(11, 15, 13, 0.8);
+    margin-top: -50px; 
+    border-radius: 50%; 
+    background-color: whitesmoke; 
+    padding: 15px; 
+    border: 3px solid #159957; 
+}
+
+.contact-info h3 {
+    margin: 0; 
+    font-size: 1.6em; 
+    color: whitesmoke; 
+}
+
+
+.contact-meta {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 10px; 
+}
+
+
+.border-box {
+    display: block; 
+    margin-bottom: 20px; 
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(11, 15, 13, 0.6); 
+    box-sizing: border-box; 
+}
+
+
+.email-tele-field label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.email-tele-field p {
+    margin: 0;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.email-tele-field {
+    width: 45%; 
+    margin-right: 20px; 
+    display: inline-block; 
+}
+
+
+.email-tele-field p:last-of-type {
+    margin-bottom: 30px; 
+}
+
+
+.company-assign-field label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.company-assign-field p {
+    margin: 0;
+    padding: 5px 0;
+    margin-bottom: 20px; 
+    width: 100%;
+}
+
+
+.company-assign-field {
+    width: 45%; 
+    display: inline-block; 
+}
+
+
+h2 i {
+    margin-right: 5px; 
+    font-size: 1.0em; 
+    color: #159957; 
+}
+
+h3 {
+    
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(11, 15, 13, 0.6);
+}
+
+li p {
+    margin: 5px 0;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff; 
+    color: #333;
+}
+
+
+form textarea {
+    height: 150px; 
+}
+
+form button {
+    margin-top: 10px;
+}
+
+
+.note-header {
+    font-size: 1.1em;
+    color: #ffffff;
+    
+}
+
+.note-form {
+    background-color: rgba(11, 15, 13, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+}
+
+.note-form button {
+    background-color: #155799;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: auto;
+}
+
+.note-form button:hover {
+    background-color: #159957;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-details {
+        width: 90%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .actions {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .border-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .email-tele-field, .company-assign-field {
+        flex: 1 1 100%;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+        min-width: auto;
+    }
+}

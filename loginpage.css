@@ -112,7 +112,14 @@ footer {
     height: auto;
 }
 
-/* Media queries for the responsiveness of the page */
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+
+
 @media screen and (max-width: 600px) {
     form {
         width: 25rem;
@@ -124,3 +131,4 @@ footer {
         width: 20rem;
     }
 }
+

@@ -1,0 +1,158 @@
+body {
+    font-family: sans-serif;
+    background: -webkit-linear-gradient(to right, #155799, #159957);
+    background: linear-gradient(to right, #155799, #159957);
+    color: whitesmoke;
+    margin: 0;
+    padding-top: 60px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.filters {
+    text-align: center;
+    margin: 40px auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: rgba(11, 15, 13, 0.582);
+    max-width: 1000px;
+}
+
+.filters span {
+    margin-right: 10px;
+    color: #159957;
+    font-weight: bold;
+}
+
+.filters a {
+    margin: 0 10px;
+    color: #159957;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.filters a:hover {
+    text-decoration: underline;
+}
+
+.content-box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: rgba(11, 15, 13, 0.582);
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.new-user-button {
+    background-color: #155799;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.new-user-button:hover {
+    background-color: #159957;
+}
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #155799;
+    color: whitesmoke;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(11, 15, 13, 0.582);
+}
+
+tr:hover {
+    background-color: #159957;
+    color: #011f4b;
+}
+
+a {
+    color: #155799;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        max-width: none;
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    td {
+        display: block;
+        text-align: right;
+        font-size: 1.1em;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: bold;
+        color: #159957;
+    }
+}

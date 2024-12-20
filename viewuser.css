@@ -1,0 +1,109 @@
+
+body {
+    font-family: sans-serif;
+    background: -webkit-linear-gradient(to right, #155799, #159957);
+    background: linear-gradient(to right, #155799, #159957);
+    color: whitesmoke;
+    margin: 0;
+    padding-top: 60px; 
+}
+
+h1 {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+
+.viewuser {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: rgba(11, 15, 13, 0.582);
+    overflow: hidden; 
+}
+
+
+.button-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.new-user-button {
+    background-color: #155799;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.new-user-button:hover {
+    background-color: #159957;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed; 
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    word-wrap: break-word; 
+}
+
+th {
+    background-color: #155799;
+    color: whitesmoke;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(11, 15, 13, 0.582);
+}
+
+tr:hover {
+    background-color: #159957;
+    color: #011f4b;
+}
+
+a {
+    color: #155799;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 600px) {
+    .viewuser {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 10px; 
+    }
+
+    th, td {
+        padding: 10px; 
+    }
+}
